@@ -12,6 +12,7 @@ namespace frontend\controllers;
 
 use frontend\models\SjfxPetrolprice;
 use frontend\models\SjfxEvent;
+use frontend\models\SjfxImportexport;
 use frontend\models\SjfxGasprice;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -34,5 +35,12 @@ class SjfxController extends Controller
         $events=$query3->orderBy('date DESC')->all();
         return $this->render("price",['patrolprice'=>$petrolprice,'newpetrol'=>$newpetrol,'events'=>$events,
                                 'gasprice'=>$gasprice,'newproduct'=>$newproduct]);
+    }
+
+    public function actionPort(){
+
+        $query3=SjfxEvent::find();
+        $events=$query3->orderBy('date DESC')->all();
+        return $this->render('port',['events'=>$events]);
     }
 }

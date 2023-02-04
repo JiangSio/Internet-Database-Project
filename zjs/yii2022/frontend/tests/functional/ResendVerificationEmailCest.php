@@ -21,7 +21,7 @@ class ResendVerificationEmailCest
     {
         return [
             'user' => [
-                'class' => UserFixture::class,
+                'class' => UserFixture::className(),
                 'dataFile' => codecept_data_dir() . 'user.php',
             ],
         ];

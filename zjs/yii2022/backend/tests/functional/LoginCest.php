@@ -21,7 +21,7 @@ class LoginCest
     {
         return [
             'user' => [
-                'class' => UserFixture::class,
+                'class' => UserFixture::className(),
                 'dataFile' => codecept_data_dir() . 'login_data.php'
             ]
         ];
@@ -32,7 +32,7 @@ class LoginCest
      */
     public function loginUser(FunctionalTester $I)
     {
-        $I->amOnRoute('/site/login');
+        $I->amOnPage('/site/login');
         $I->fillField('Username', 'erau');
         $I->fillField('Password', 'password_0');
         $I->click('login-button');

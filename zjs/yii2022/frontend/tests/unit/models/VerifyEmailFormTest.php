@@ -17,7 +17,7 @@ class VerifyEmailFormTest extends \Codeception\Test\Unit
     {
         $this->tester->haveFixtures([
             'user' => [
-                'class' => UserFixture::class,
+                'class' => UserFixture::className(),
                 'dataFile' => codecept_data_dir() . 'user.php'
             ]
         ]);
@@ -25,18 +25,18 @@ class VerifyEmailFormTest extends \Codeception\Test\Unit
 
     public function testVerifyWrongToken()
     {
-        $this->tester->expectThrowable('\yii\base\InvalidArgumentException', function() {
+        $this->tester->expectException('\yii\base\InvalidArgumentException', function() {
             new VerifyEmailForm('');
         });
 
-        $this->tester->expectThrowable('\yii\base\InvalidArgumentException', function() {
+        $this->tester->expectException('\yii\base\InvalidArgumentException', function() {
             new VerifyEmailForm('notexistingtoken_1391882543');
         });
     }
 
     public function testAlreadyActivatedToken()
     {
-        $this->tester->expectThrowable('\yii\base\InvalidArgumentException', function() {
+        $this->tester->expectException('\yii\base\InvalidArgumentException', function() {
             new VerifyEmailForm('already_used_token_1548675330');
         });
     }
@@ -45,11 +45,11 @@ class VerifyEmailFormTest extends \Codeception\Test\Unit
     {
         $model = new VerifyEmailForm('4ch0qbfhvWwkcuWqjN8SWRq72SOw1KYT_1548675330');
         $user = $model->verifyEmail();
-        verify($user)->instanceOf('common\models\User');
+        expect($user)->isInstanceOf('common\models\User');
 
-        verify($user->username)->equals('test.test');
-        verify($user->email)->equals('test@mail.com');
-        verify($user->status)->equals(\common\models\User::STATUS_ACTIVE);
-        verify($user->validatePassword('Test1234'))->true();
+        expect($user->username)->equals('test.test');
+        expect($user->email)->equals('test@mail.com');
+        expect($user->status)->equals(\common\models\User::STATUS_ACTIVE);
+        expect($user->validatePassword('Test1234'))->true();
     }
 }

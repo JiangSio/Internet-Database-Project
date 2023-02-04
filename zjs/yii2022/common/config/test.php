@@ -4,7 +4,7 @@ return [
     'basePath' => dirname(__DIR__),
     'components' => [
         'user' => [
-            'class' => \yii\web\User::class,
+            'class' => 'yii\web\User',
             'identityClass' => 'common\models\User',
         ],
     ],

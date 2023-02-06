@@ -1,6 +1,6 @@
 main > .container, main > .container-fluid
 {
-    padding: 70px 15px 20px;
+    padding: 70px 15px 0px;
 }
 
 .footer {
@@ -10,8 +10,8 @@ main > .container, main > .container-fluid
 }
 
 .footer > .container, .footer > .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 .not-set {

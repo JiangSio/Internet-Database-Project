@@ -43,13 +43,13 @@ use common\models\Developer;
         </a>
         </div>
         <div class="col-sm-2">
-        <a href="https://via.placeholder.com/1200/FFFFFF.png?text=1" data-toggle="" data-title="sample 1 - white" data-gallery="gallery">
-            <img src="https://via.placeholder.com/300/FFFFFF?text=1" class="img-fluid mb-2" alt="white sample"/>
+        <a href="img/jtj.jpg" data-toggle="" data-title="sample 1 - white" data-gallery="gallery">
+            <img src="img/jtj.jpg" class="img-fluid mb-2" alt="white sample"/>
         </a>
         </div>
         <div class="col-sm-2">
-        <a href="https://via.placeholder.com/1200/000000.png?text=2" data-toggle="" data-title="sample 2 - black" data-gallery="gallery">
-            <img src="https://via.placeholder.com/300/000000?text=2" class="img-fluid mb-2" alt="black sample"/>
+        <a href="img/yzh.jpg" data-toggle="" data-title="sample 2 - black" data-gallery="gallery">
+            <img src="img/yzh.jpg" class="img-fluid mb-2" alt="black sample"/>
         </a>
         </div>
         <div class="col-sm-2">
@@ -75,13 +75,13 @@ use common\models\Developer;
         </a>
         </div>
         <div class="col-sm-2">
-        <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=3" data-toggle="" data-title="sample 3 - red" data-gallery="gallery">
-            <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=3" class="img-fluid mb-2" alt="red sample"/>
+        <a href="img/wtp.jpg" data-toggle="" data-title="sample 3 - red" data-gallery="gallery">
+            <img src="img/wtp.jpg" class="img-fluid mb-2" alt="red sample"/>
         </a>
         </div>
         <div class="col-sm-2">
-        <a href="https://via.placeholder.com/1200/FF0000/FFFFFF.png?text=4" data-toggle="" data-title="sample 4 - red" data-gallery="gallery">
-            <img src="https://via.placeholder.com/300/FF0000/FFFFFF?text=4" class="img-fluid mb-2" alt="red sample"/>
+        <a href="img/zjs.jpg" data-toggle="" data-title="sample 4 - red" data-gallery="gallery">
+            <img src="img/zjs.jpg" class="img-fluid mb-2" alt="red sample"/>
         </a>
         </div>
         <div class="col-sm-2">

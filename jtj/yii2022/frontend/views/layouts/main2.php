@@ -506,7 +506,7 @@ AppAsset::register($this);
         <div class="row">
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="single-team">
-              <img src="newmain/img/team/team1.jpg" alt="">
+              <img src="newmain/img/team/jtj.jpg" alt="">
               <div class="team-details">
                 <div class="team-inner">
                   <h4 class="team-title">姜天嘉</h4>
@@ -523,7 +523,7 @@ AppAsset::register($this);
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="single-team">
-              <img src="newmain/img/team/team2.jpg" alt="">
+              <img src="newmain/img/team/yzh.jpg" alt="">
               <div class="team-details">
                 <div class="team-inner">
                   <h4 class="team-title">闫钊辉</h4>
@@ -540,7 +540,7 @@ AppAsset::register($this);
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="single-team">
-              <img src="newmain/img/team/team3.jpg" alt="">
+              <img src="newmain/img/team/wtp.jpg" alt="">
               <div class="team-details">
                 <div class="team-inner">                  
                   <h4 class="team-title">王天鹏</h4>
@@ -557,7 +557,7 @@ AppAsset::register($this);
           </div>
           <div class="col-lg-3 col-md-6 col-xs-12">
             <div class="single-team">
-              <img class="img-fulid" src="newmain/img/team/team4.jpg" alt="">
+              <img class="img-fulid" src="newmain/img/team/zjs.jpg" alt="">
               <div class="team-details">
                 <div class="team-inner">
                   <h4 class="team-title">张继盛</h4>
@@ -584,7 +584,7 @@ AppAsset::register($this);
           <div class="col-md-12">
             <div class="touch-slider owl-carousel owl-theme">
               <div class="testimonial-item">
-                <img src="newmain/img/testimonial/customer1.jpg" alt="Client Testimonoal" />
+                <img src="newmain/img/team/jtj.jpg" alt="Client Testimonoal" />
                 <div class="testimonial-text">
                   <p><?php 
                       $t = Developer::find()->where(['id'=>1])->one();
@@ -595,7 +595,7 @@ AppAsset::register($this);
                 </div>
               </div>
               <div class="testimonial-item">
-                <img src="newmain/img/testimonial/customer2.jpg" alt="Client Testimonoal" />
+                <img src="newmain/img/team/yzh.jpg" alt="Client Testimonoal" />
                 <div class="testimonial-text">
                   <p><?php 
                       $t = Developer::find()->where(['id'=>4])->one();
@@ -606,7 +606,7 @@ AppAsset::register($this);
                 </div>
               </div>
               <div class="testimonial-item">
-                <img src="newmain/img/testimonial/customer3.jpg" alt="Client Testimonoal" />
+                <img src="newmain/img/team/wtp.jpg" alt="Client Testimonoal" />
                 <div class="testimonial-text">
                   <p><?php 
                       $t = Developer::find()->where(['id'=>3])->one();
@@ -617,7 +617,7 @@ AppAsset::register($this);
                 </div>
               </div>
               <div class="testimonial-item">
-                <img src="newmain/img/testimonial/customer4.jpg" alt="Client Testimonoal" />
+                <img src="newmain/img/team/zjs.jpg" alt="Client Testimonoal" />
                 <div class="testimonial-text">
                   <p><?php 
                       $t = Developer::find()->where(['id'=>2])->one();

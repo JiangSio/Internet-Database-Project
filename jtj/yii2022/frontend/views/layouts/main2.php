@@ -204,48 +204,48 @@ AppAsset::register($this);
     <section id="features" class="section" data-stellar-background-ratio="0.2" style="background: url(newmain/img/webpic/battlefield13.jpg);background-size: cover;">
       <div class="container">
         <div class="section-header">          
-          <h2 class="section-title">Some Features</h2>
+          <h2 class="section-title">深度聚焦</h2>
           <hr class="lines">
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, dignissimos! <br> Lorem ipsum dolor sit amet, consectetur.</p>
+          <p class="section-subtitle">深度分析俄乌战局<br>专家学者在线发声</p>
         </div>
         <div class="row">
           <div class="col-lg-8 col-md-12 col-xs-12">
             <div class="container">
               <div class="row">
-                 <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                 <div class="col-lg-6 col-sm-6 col-xs-12 box-item" onclick="window.open('index.php?r=post/index')">
                     <span class="icon">
-                      <i class="lnr lnr-rocket"></i>
+                      <i class="lnr lnr-rocket" ></i>
                     </span>
                     <div class="text">
-                      <h4>Bootstrap 4 Based</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <h4>战争进程</h4>
+                      <p>俄乌进程解读</p>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item" onclick="window.open('index.php?r=post/index')">
                     <span class="icon">
                       <i class="lnr lnr-laptop-phone"></i>
                     </span>
                     <div class="text">
-                      <h4>Fully Responsive</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                      <h4>历史渊源</h4>
+                      <p>俄乌两国历史上的渊源分析</p>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item" onclick="window.open('index.php?r=post/index')">
                     <span class="icon">
                       <i class="lnr lnr-layers"></i>
                     </span>
                     <div class="text">
-                      <h4>Parallax Background</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                      <h4>原因分析</h4>
+                      <p>俄乌战原因分析介绍</p>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
+                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item" onclick="window.open('index.php?r=post/index')">
                     <span class="icon">
                       <i class="lnr lnr-cog"></i>
                     </span>
                     <div class="text">
-                      <h4>Easy to Customize</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                      <h4>在线讨论</h4>
+                      <p>广大网友在线讨论</p>
                     </div>
                   </div>
               </div>

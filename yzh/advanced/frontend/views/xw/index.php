@@ -4,6 +4,7 @@ namespace frontend\models;
 
 use frontend\models\Dead;
 use frontend\models\News;
+use frontend\models\World;
 $news = News::find()->all();
 $n1 = News::findOne('1');
 $d1=$n1->news_name;
@@ -24,6 +25,70 @@ $b4=$n4->news_web;
 $n5 = News::findOne('5');
 $d5=$n5->news_name;
 $b5=$n5->news_web;
+
+$n6 = News::findOne('6');
+$d6=$n6->news_name;
+$b6=$n6->news_web;
+
+$n7 = News::findOne('7');
+$d7=$n7->news_name;
+$b7=$n7->news_web;
+
+$n8 = News::findOne('8');
+$d8=$n8->news_name;
+$b8=$n8->news_web;
+
+$n9 = News::findOne('9');
+$d9=$n9->news_name;
+$b9=$n9->news_web;
+
+$a1 = World::findOne('1');
+$c1 = $a1->w_time;
+$w1 = $a1->w_name;
+
+$a2 = World::findOne('2');
+$c2 = $a2->w_time;
+$w2 = $a2->w_name;
+
+$a3 = World::findOne('3');
+$c3 = $a3->w_time;
+$w3 = $a3->w_name;
+
+$a4 = World::findOne('4');
+$c4 = $a4->w_time;
+$w4 = $a4->w_name;
+
+$a5 = World::findOne('5');
+$c5 = $a5->w_time;
+$w5 = $a5->w_name;
+
+$a6 = World::findOne('6');
+$c6=$a6->w_time;
+$w6=$a6->w_name;
+
+$a7 = World::findOne('7');
+$c7=$a7->w_time;
+$w7=$a7->w_name;
+
+$a8 = World::findOne('8');
+$c8=$a8->w_time;
+$w8=$a8->w_name;
+
+$a9 = World::findOne('9');
+$c9=$a9->w_time;
+$w9=$a9->w_name;
+
+$a10 = World::findOne('10');
+$c10=$a10->w_time;
+$w10=$a10->w_name;
+
+$a11 = World::findOne('11');
+$c11=$a11->w_time;
+$w11=$a11->w_name;
+
+$a12 = World::findOne('12');
+$c12=$a12->w_time;
+$w12=$a12->w_name;
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,9 +115,8 @@ $b5=$n5->news_web;
         <div class="head">
             <div class="JavaS"><a href="https://gitee.com/iGaoWei/big-data-view" target="_blank">YZH</a></div>
             <div class="weather"><span id="showTime"></span></div>
-            <a href="https://gitee.com/iGaoWei/big-data-view" target="_blank">
-                <h1>俄乌战争</h1>
-            </a>
+            <h1>俄乌战争</h1>
+
 
         </div>
         <script>
@@ -91,6 +155,7 @@ $b5=$n5->news_web;
                         <h5>来源：欧盟主席会</h5>
                          <div class="navboxall" id="echart5"></div>
                     </div>
+
                     <div class="boxall" style="height:520px;">
                         <div class="alltitle">新闻播报</div>
                         <div class="navboxall">
@@ -99,6 +164,9 @@ $b5=$n5->news_web;
 <!--                            </div>-->
                             <div class="wrap">
                                 <ul>
+
+                                    <div style="color::red"><h5>本版块包括来自国内外各个媒体的新闻观点</h5></div>
+
                                     <p style="background-color:rgb(255,255,0)">
                                         <a href=<?php echo $b2 ?>>
                                             <?php echo $d2; ?>
@@ -119,12 +187,33 @@ $b5=$n5->news_web;
                                             <?php echo $d5; ?>
                                         </a>
                                     </p>
+                                    <p style="background-color:rgb(255,255,0)">
+                                        <a href=<?php echo $b6 ?>>
+                                            <?php echo $d6; ?>
+                                        </a>
+                                    </p>
+                                    <p style="background-color:rgb(255,255,0)">
+                                        <a href=<?php echo $b7 ?>>
+                                            <?php echo $d7; ?>
+                                        </a>
+                                    </p>
+                                    <p style="background-color:rgb(255,255,0)">
+                                        <a href=<?php echo $b8 ?>>
+                                            <?php echo $d8; ?>
+                                        </a>
+                                    </p>
+                                    <p style="background-color:rgb(255,255,0)">
+                                        <a href=<?php echo $b9 ?>>
+                                            <?php echo $d9; ?>
+                                        </a>
+                                    </p>
 
                                 </ul>
                             </div>
 
                         </div>
                     </div>
+
                     <div class="navboxall" id="echart1"></div>
 
 <!--                    <div class="boxall" style="height:0px;">-->
@@ -134,86 +223,113 @@ $b5=$n5->news_web;
                 </li>
                 <li>
 
-                    <div class="boxall" style="height:230px">
+                    <div class="boxall" style="height:320px">
                         <div class="clearfix navboxall" style="height: 100%">
 
                             <div class="pulll_left zhibiao">
-                                <div class="zb1"><span>TES<br>胜率最高</span>
+                                <div class="zb1"><span>坦克<br>损失数量</span>
                                     <div id="zb1"></div>
                                 </div>
-                                <div class="zb2"><span>JDG<br>击杀最高</span>
+                                <div class="zb2"><span>步兵战车<br>损失数量</span>
                                     <div id="zb2"></div>
                                 </div>
-                                <div class="zb3"><span>SN<br>插眼最多</span>
+                                <div class="zb3"><span>装甲运兵车<br>损失数量</span>
                                     <div id="zb3"></div>
                                 </div>
                             </div>
                             <div class="pulll_right zhibiao ">
-                                <div class="zb4"><span>TESknight<br>击杀最多</span>
+                                <div class="zb4"><span>飞机<br>损失数量</span>
                                     <div id="zb4"></div>
                                 </div>
-                                <div class="zb5"><span>IGTheShy<br>死亡最多</span>
+                                <div class="zb5"><span>直升机<br>损失数量</span>
                                     <div id="zb5"></div>
                                 </div>
-                                <div class="zb6"><span>V5y4<br>KDA最高</span>
+                                <div class="zb6"><span>无人机<br>损失数量</span>
                                     <div id="zb6"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="boxall" style="height:350px">
+                    <div class="boxall" style="height:600px">
                         <div class="alltitle">双方死亡人数</div>
                         <div class="navboxall" id="echart4"></div>
                     </div>
 
-                    <div class="boxall" style="height:340px">
-                        <div class="alltitle">个人击杀数据</div>
-                        <div class="navboxall" id="echart3"></div>
-                    </div>
+                    <div class="navboxall" id="echart3"></div>
                 </li>
                 <li>
-                    <div class="boxall" style="height:300px">
-                        <div class="alltitle">战队排行榜</div>
+                    <div class="boxall" style="height:600px">
+                        <div class="alltitle">俄乌世界线</div>
                         <div class="navboxall">
                             <table class="table1" width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
-                                        <th scope="col" class="toptop">排名</th>
-                                        <th scope="col">战队</th>
-                                        <th scope="col">出场次数</th>
-                                        <th scope="col">胜率</th>
+                                        <th scope="col" class="toptop">时间</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">事件</th>
+                                        <th scope="col"></th>
                                     </tr>
                                     <tr>
                                         <td><span>1</span></td>
-                                        <td>TES</td>
-                                        <td>45<br></td>
-                                        <td>73%<br></td>
+                                        <td><?php echo $c1; ?></td>
+                                        <td><?php echo $w1; ?></td>
                                     </tr>
                                     <tr>
                                         <td><span>2</span></td>
-                                        <td>JDG</td>
-                                        <td>48</td>
-                                        <td>68%</td>
+                                        <td><?php echo $c2; ?></td>
+                                        <td><?php echo $w2; ?></td>
                                     </tr>
 
                                     <tr>
                                         <td><span>3</span></td>
-                                        <td>V5</td>
-                                        <td>49</td>
-                                        <td>61%</td>
+                                        <td><?php echo $c3; ?></td>
+                                        <td><?php echo $w3; ?></td>
                                     </tr>
                                     <tr>
                                         <td><span>4</span></td>
-                                        <td>IG</td>
-                                        <td>44</td>
-                                        <td>59%</td>
+                                        <td><?php echo $c4; ?></td>
+                                        <td><?php echo $w4; ?></td>
                                     </tr>
                                     <tr>
                                         <td><span>5</span></td>
-                                        <td>SN</td>
-                                        <td>52</td>
-                                        <td>59%</td>
+                                        <td><?php echo $c5; ?></td>
+                                        <td><?php echo $w5; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>6</span></td>
+                                        <td><?php echo $c6; ?></td>
+                                        <td><?php echo $w6; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>7</span></td>
+                                        <td><?php echo $c7; ?></td>
+                                        <td><?php echo $w7; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>8</span></td>
+                                        <td><?php echo $c8; ?></td>
+                                        <td><?php echo $w8; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>9</span></td>
+                                        <td><?php echo $c9; ?></td>
+                                        <td><?php echo $w9; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>10</span></td>
+                                        <td><?php echo $c10; ?></td>
+                                        <td><?php echo $w10; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>11</span></td>
+                                        <td><?php echo $c11; ?></td>
+                                        <td><?php echo $w11; ?></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span>12</span></td>
+                                        <td><?php echo $c12; ?></td>
+                                        <td><?php echo $w12; ?></td>
                                     </tr>
 
                                 </tbody>
@@ -222,59 +338,37 @@ $b5=$n5->news_web;
                     </div>
 
                     <div class="boxall" style="height: 300px">
-                        <div class="alltitle">个人排行榜</div>
+                        <div class="alltitle">战争总括</div>
                         <div class="navboxall">
                             <table class="table1" width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
-                                        <th scope="col" class="toptop">排名</th>
-                                        <th scope="col">队员</th>
-                                        <th scope="col">位置</th>
-                                        <th scope="col">总击杀</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">三大阶段</th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
                                     </tr>
                                     <tr>
                                         <td><span>1</span></td>
-                                        <td>TESknight</td>
-                                        <td>中单<br></td>
-                                        <td>239<br></td>
+                                        <td>第一阶段：入侵乌克兰（ 2022年2月24日 － 4月7日 ）</td>
                                     </tr>
                                     <tr>
                                         <td><span>2</span></td>
-                                        <td>WEJiumeng</td>
-                                        <td>ADC</td>
-                                        <td>205</td>
+                                        <td>第二阶段：东南战线（4月8日－9月5日）</td>
+
                                     </tr>
 
                                     <tr>
                                         <td><span>3</span></td>
-                                        <td>TESJackeyLove</td>
-                                        <td>ADC</td>
-                                        <td>205</td>
+                                        <td>第三阶段：乌克兰反攻以及核危机（9月6日－至今）</td>
                                     </tr>
-                                    <tr>
-                                        <td><span>4</span></td>
-                                        <td>JDGLokeN</td>
-                                        <td>ADC</td>
-                                        <td>205</td>
-                                    </tr>
-                                    <tr>
-                                        <td><span>5</span></td>
-                                        <td>LGDxiye</td>
-                                        <td>中单</td>
-                                        <td>191</td>
-                                    </tr>
-
                                 </tbody>
                             </table>
                         </div>
 
                     </div>
 
-                    <div class="boxall" style="height:320px">
-                        <div class="alltitle">MVP种子选手</div>
-                        <div class="navboxall" id="echart2"></div>
-                    </div>
-
+                    <div class="navboxall" id="echart2"></div>
 
                 </li>
             </ul>

@@ -32,132 +32,132 @@ $(function() {
         var myChart = echarts.init(document.getElementById('echart2'));
 
         option = {
-            tooltip: {
-                trigger: 'item',
-                formatter: "{b} : {c} ({d}%)"
-            },
-            legend: {
-
-                top: '15%',
-                data: ['LNG\nLight', 'RNG\nXLB', 'FPX\nDoinb', 'IG\nTheShy', 'TES\nknight'],
-                icon: 'circle',
-                textStyle: {
-                    color: 'rgba(255,255,255,.6)',
-                }
-            },
-            calculable: true,
-            series: [{
-                name: '',
-                color: ['#62c98d', '#2f89cf', '#4cb9cf', '#53b666', '#62c98d', '#205acf', '#c9c862', '#c98b62', '#c962b9', '#c96262'],
-                type: 'pie',
-                //起始角度，支持范围[0, 360]
-                startAngle: 0,
-                //饼图的半径，数组的第一项是内半径，第二项是外半径
-                radius: [51, 100],
-                //支持设置成百分比，设置成百分比时第一项是相对于容器宽度，第二项是相对于容器高度
-                center: ['50%', '45%'],
-
-                //是否展示成南丁格尔图，通过半径区分数据大小。可选择两种模式：
-                // 'radius' 面积展现数据的百分比，半径展现数据的大小。
-                //  'area' 所有扇区面积相同，仅通过半径展现数据大小
-                roseType: 'area',
-                //是否启用防止标签重叠策略，默认开启，圆环图这个例子中需要强制所有标签放在中心位置，可以将该值设为 false。
-                avoidLabelOverlap: false,
-                label: {
-                    normal: {
-                        show: true,
-                        //  formatter: '{c}辆'
-                    },
-                    emphasis: {
-                        show: true
-                    }
-                },
-                labelLine: {
-                    normal: {
-                        show: true,
-                        length2: 1,
-                    },
-                    emphasis: {
-                        show: true
-                    }
-                },
-                data: [{
-                        value: 1,
-                        name: 'LNG\nLight',
-                    },
-                    {
-                        value: 4,
-                        name: 'RNG\nXLB',
-                    },
-                    {
-                        value: 5,
-                        name: 'FPX\nDoinb',
-                    },
-                    {
-                        value: 6,
-                        name: 'IG\nTheShy',
-                    },
-                    {
-                        value: 9,
-                        name: 'TES\nknight',
-                    },
-
-
-
-                    {
-                        value: 0,
-                        name: "",
-                        label: {
-                            show: false
-                        },
-                        labelLine: {
-                            show: false
-                        }
-                    },
-                    {
-                        value: 0,
-                        name: "",
-                        label: {
-                            show: false
-                        },
-                        labelLine: {
-                            show: false
-                        }
-                    },
-                    {
-                        value: 0,
-                        name: "",
-                        label: {
-                            show: false
-                        },
-                        labelLine: {
-                            show: false
-                        }
-                    },
-                    {
-                        value: 0,
-                        name: "",
-                        label: {
-                            show: false
-                        },
-                        labelLine: {
-                            show: false
-                        }
-                    },
-                    {
-                        value: 0,
-                        name: "",
-                        label: {
-                            show: false
-                        },
-                        labelLine: {
-                            show: false
-                        }
-                    },
-
-
-                ]
-            }]
+        //     tooltip: {
+        //         trigger: 'item',
+        //         formatter: "{b} : {c} ({d}%)"
+        //     },
+        //     legend: {
+        //
+        //         top: '15%',
+        //         data: ['LNG\nLight', 'RNG\nXLB', 'FPX\nDoinb', 'IG\nTheShy', 'TES\nknight'],
+        //         icon: 'circle',
+        //         textStyle: {
+        //             color: 'rgba(255,255,255,.6)',
+        //         }
+        //     },
+        //     calculable: true,
+        //     series: [{
+        //         name: '',
+        //         color: ['#62c98d', '#2f89cf', '#4cb9cf', '#53b666', '#62c98d', '#205acf', '#c9c862', '#c98b62', '#c962b9', '#c96262'],
+        //         type: 'pie',
+        //         //起始角度，支持范围[0, 360]
+        //         startAngle: 0,
+        //         //饼图的半径，数组的第一项是内半径，第二项是外半径
+        //         radius: [51, 100],
+        //         //支持设置成百分比，设置成百分比时第一项是相对于容器宽度，第二项是相对于容器高度
+        //         center: ['50%', '45%'],
+        //
+        //         //是否展示成南丁格尔图，通过半径区分数据大小。可选择两种模式：
+        //         // 'radius' 面积展现数据的百分比，半径展现数据的大小。
+        //         //  'area' 所有扇区面积相同，仅通过半径展现数据大小
+        //         roseType: 'area',
+        //         //是否启用防止标签重叠策略，默认开启，圆环图这个例子中需要强制所有标签放在中心位置，可以将该值设为 false。
+        //         avoidLabelOverlap: false,
+        //         label: {
+        //             normal: {
+        //                 show: true,
+        //                 //  formatter: '{c}辆'
+        //             },
+        //             emphasis: {
+        //                 show: true
+        //             }
+        //         },
+        //         labelLine: {
+        //             normal: {
+        //                 show: true,
+        //                 length2: 1,
+        //             },
+        //             emphasis: {
+        //                 show: true
+        //             }
+        //         },
+        //         data: [{
+        //                 value: 1,
+        //                 name: 'LNG\nLight',
+        //             },
+        //             {
+        //                 value: 4,
+        //                 name: 'RNG\nXLB',
+        //             },
+        //             {
+        //                 value: 5,
+        //                 name: 'FPX\nDoinb',
+        //             },
+        //             {
+        //                 value: 6,
+        //                 name: 'IG\nTheShy',
+        //             },
+        //             {
+        //                 value: 9,
+        //                 name: 'TES\nknight',
+        //             },
+        //
+        //
+        //
+        //             {
+        //                 value: 0,
+        //                 name: "",
+        //                 label: {
+        //                     show: false
+        //                 },
+        //                 labelLine: {
+        //                     show: false
+        //                 }
+        //             },
+        //             {
+        //                 value: 0,
+        //                 name: "",
+        //                 label: {
+        //                     show: false
+        //                 },
+        //                 labelLine: {
+        //                     show: false
+        //                 }
+        //             },
+        //             {
+        //                 value: 0,
+        //                 name: "",
+        //                 label: {
+        //                     show: false
+        //                 },
+        //                 labelLine: {
+        //                     show: false
+        //                 }
+        //             },
+        //             {
+        //                 value: 0,
+        //                 name: "",
+        //                 label: {
+        //                     show: false
+        //                 },
+        //                 labelLine: {
+        //                     show: false
+        //                 }
+        //             },
+        //             {
+        //                 value: 0,
+        //                 name: "",
+        //                 label: {
+        //                     show: false
+        //                 },
+        //                 labelLine: {
+        //                     show: false
+        //                 }
+        //             },
+        //
+        //
+        //         ]
+        //     }]
         };
 
         // 使用刚指定的配置项和数据显示图表。
@@ -172,177 +172,6 @@ $(function() {
         var myChart = echarts.init(document.getElementById('echart3'));
 
         option = {
-            tooltip: {
-                trigger: 'axis',
-                axisPointer: {
-                    lineStyle: {
-                        color: '#57617B'
-                    }
-                }
-            },
-            legend: {
-
-                //icon: 'vertical',
-                data: ['总击杀', '总助攻', '总死亡'],
-                //align: 'center',
-                // right: '35%',
-                top: '0',
-                textStyle: {
-                    color: "#fff"
-                },
-                // itemWidth: 15,
-                // itemHeight: 15,
-                itemGap: 20,
-            },
-            grid: {
-                left: '0',
-                right: '20',
-                top: '10',
-                bottom: '20',
-                containLabel: true
-            },
-            xAxis: [{
-                type: 'category',
-                boundaryGap: false,
-                axisLabel: {
-                    show: true,
-                    textStyle: {
-                        color: 'rgba(255,255,255,1)',
-                        fontSize: 11
-                    }
-                },
-                axisLine: {
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
-                    }
-                },
-                data: ['\nWE\nJiumeng', '\nLGD\nxiye', '\nTES\nknight', '\nJDG\nKanavi', '\nTES\nJackeyLove', '\nSN\nSofM', '\nV5\nMole', '\nEDG\nScout',
-                    '\nSN\nhuanfeng', '\nFPX\nDoinb', '\nIG\nNing', '\nV5\nSamd'
-                ]
-            }, {
-
-
-
-
-            }],
-            yAxis: [{
-                axisLabel: {
-                    show: true,
-                    textStyle: {
-                        color: 'rgba(255,255,255,.6)'
-                    }
-                },
-                axisLine: {
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
-                    }
-                },
-                splitLine: {
-                    lineStyle: {
-                        color: 'rgba(255,255,255,.1)'
-                    }
-                }
-            }],
-            series: [{
-                name: '总击杀',
-                type: 'line',
-                smooth: true,
-                symbol: 'circle',
-                symbolSize: 5,
-                showSymbol: false,
-                lineStyle: {
-                    normal: {
-                        width: 2
-                    }
-                },
-                areaStyle: {
-                    normal: {
-                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                            offset: 0,
-                            color: 'rgba(24, 163, 64, 0.3)'
-                        }, {
-                            offset: 0.8,
-                            color: 'rgba(24, 163, 64, 0)'
-                        }], false),
-                        shadowColor: 'rgba(0, 0, 0, 0.1)',
-                        shadowBlur: 10
-                    }
-                },
-                itemStyle: {
-                    normal: {
-                        color: '#cdba00',
-                        borderColor: 'rgba(137,189,2,0.27)',
-                        borderWidth: 12
-                    }
-                },
-                data: [205, 191, 239, 169, 205, 125, 162, 136, 189, 157, 121, 158]
-            }, {
-                name: '总助攻',
-                type: 'line',
-                smooth: true,
-                symbol: 'circle',
-                symbolSize: 5,
-                showSymbol: false,
-                lineStyle: {
-                    normal: {
-                        width: 2
-                    }
-                },
-                areaStyle: {
-                    normal: {
-                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                            offset: 0,
-                            color: 'rgba(39, 122,206, 0.3)'
-                        }, {
-                            offset: 0.8,
-                            color: 'rgba(39, 122,206, 0)'
-                        }], false),
-                        shadowColor: 'rgba(0, 0, 0, 0.1)',
-                        shadowBlur: 10
-                    }
-                },
-                itemStyle: {
-                    normal: {
-                        color: '#277ace',
-                        borderColor: 'rgba(0,136,212,0.2)',
-                        borderWidth: 12
-                    }
-                },
-                data: [266, 289, 299, 345, 278, 375, 270, 270, 286, 315, 304, 220]
-            }, {
-                name: '总死亡',
-                type: 'line',
-                smooth: true,
-                symbol: 'circle',
-                symbolSize: 5,
-                showSymbol: false,
-                lineStyle: {
-                    normal: {
-                        width: 2
-                    }
-                },
-                areaStyle: {
-                    normal: {
-                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
-                            offset: 0,
-                            color: 'rgba(39, 122,206, 0.3)'
-                        }, {
-                            offset: 0.8,
-                            color: 'rgba(39, 122,206, 0)'
-                        }], false),
-                        shadowColor: 'rgba(0, 0, 0, 0.1)',
-                        shadowBlur: 10
-                    }
-                },
-                itemStyle: {
-                    normal: {
-                        color: '#67E0E3',
-                        borderColor: 'rgba(10,148,236,0.5)',
-                        borderWidth: 12
-                    }
-                },
-                data: [119, 124, 76, 122, 117, 136, 115, 73, 102, 115, 107, 81]
-            }]
         };
 
         // 使用刚指定的配置项和数据显示图表。
@@ -554,8 +383,8 @@ $(function() {
     function zb1() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('zb1'));
-        var v2 = 33 //胜利
-        var v1 = 12 //战败
+        var v2 = 738 //俄罗斯损失数量
+        var v1 = 185 //乌克兰损失数量
         var v3 = v1 + v2 //总消费 
         option = {
             tooltip: {
@@ -573,10 +402,10 @@ $(function() {
                 },
                 data: [{
                     value: v2,
-                    name: '胜利',
+                    name: '俄罗斯',
                     label: {
                         normal: {
-                            formatter: v2 + '',
+                            formatter: '总损失',
                             textStyle: {
                                 fontSize: 20,
                                 color: '#fff',
@@ -585,12 +414,10 @@ $(function() {
                     }
                 }, {
                     value: v1,
-                    name: '战败',
+                    name: '乌克兰',
                     label: {
                         normal: {
-                            formatter: function(params) {
-                                return '胜率' + Math.round(v2 / v3 * 100) + '%'
-                            },
+                            formatter: v1 + v2+ '',
                             textStyle: {
                                 color: '#aaa',
                                 fontSize: 12
@@ -617,8 +444,8 @@ $(function() {
     function zb2() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('zb2'));
-        var v1 = 738 //总击杀
-        var v2 = 542 //总死亡
+        var v1 = 809 //总击杀
+        var v2 = 112 //总死亡
         var v3 = v1 + v2 //
         option = {
 
@@ -636,10 +463,10 @@ $(function() {
                 },
                 data: [{
                     value: v1,
-                    name: '总击杀',
+                    name: '俄罗斯',
                     label: {
                         normal: {
-                            formatter: v1 + '',
+                            formatter: '总损失',
                             textStyle: {
                                 fontSize: 20,
                                 color: '#fff',
@@ -648,12 +475,10 @@ $(function() {
                     }
                 }, {
                     value: v2,
-                    name: '总死亡',
+                    name: '乌克兰',
                     label: {
                         normal: {
-                            formatter: function(params) {
-                                return '总击杀'
-                            },
+                            formatter: v1 +v2 +'',
                             textStyle: {
                                 color: '#aaa',
                                 fontSize: 12
@@ -680,8 +505,8 @@ $(function() {
     function zb3() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('zb3'));
-        var v1 = 51 //排眼
-        var v2 = 121 //插眼
+        var v1 = 112 //排眼
+        var v2 = 64 //插眼
         var v3 = v1 + v2 //总消费 
         option = {
             tooltip: {
@@ -698,11 +523,11 @@ $(function() {
                     }
                 },
                 data: [{
-                    value: v2,
-                    name: '插眼',
+                    value: v1,
+                    name: '俄罗斯',
                     label: {
                         normal: {
-                            formatter: v2 + '',
+                            formatter: '总损失',
                             textStyle: {
                                 fontSize: 20,
                                 color: '#fff',
@@ -710,13 +535,11 @@ $(function() {
                         }
                     }
                 }, {
-                    value: v1,
-                    name: '排眼',
+                    value: v2,
+                    name: '乌克兰',
                     label: {
                         normal: {
-                            formatter: function(params) {
-                                return '总插眼'
-                            },
+                            formatter:v3+'',
                             textStyle: {
                                 color: '#aaa',
                                 fontSize: 12
@@ -743,8 +566,8 @@ $(function() {
     function zb4() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('zb4'));
-        var v1 = 76 //死亡
-        var v2 = 239 //击杀
+        var v1 = 29 //死亡
+        var v2 = 25 //击杀
         var v3 = v1 + v2
 
         option = {
@@ -762,11 +585,11 @@ $(function() {
                     }
                 },
                 data: [{
-                    value: v2,
-                    name: '击杀',
+                    value: v1,
+                    name: '俄罗斯',
                     label: {
                         normal: {
-                            formatter: v2 + '',
+                            formatter:'总损失',
                             textStyle: {
                                 fontSize: 20,
                                 color: '#fff',
@@ -774,13 +597,11 @@ $(function() {
                         }
                     }
                 }, {
-                    value: v1,
-                    name: '死亡',
+                    value: v2,
+                    name: '乌克兰',
                     label: {
                         normal: {
-                            formatter: function(params) {
-                                return '总击杀'
-                            },
+                            formatter:v3+'',
                             textStyle: {
                                 color: '#aaa',
                                 fontSize: 12
@@ -807,8 +628,8 @@ $(function() {
     function zb5() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('zb5'));
-        var v1 = 348 //助攻和击杀
-        var v2 = 165 //死亡
+        var v1 = 43 //助攻和击杀
+        var v2 = 9 //死亡
         var v3 = v1 + v2 //总消费
         option = {
             tooltip: {
@@ -825,11 +646,11 @@ $(function() {
                     }
                 },
                 data: [{
-                    value: v2,
-                    name: '总死亡',
+                    value: v1,
+                    name: '俄罗斯',
                     label: {
                         normal: {
-                            formatter: v2 + '',
+                            formatter: '总损失',
                             textStyle: {
                                 fontSize: 20,
                                 color: '#fff',
@@ -837,13 +658,11 @@ $(function() {
                         }
                     }
                 }, {
-                    value: v1,
-                    name: '击杀和助攻',
+                    value: v2,
+                    name: '乌克兰',
                     label: {
                         normal: {
-                            formatter: function(params) {
-                                return '总死亡'
-                            },
+                            formatter: v3 + '',
                             textStyle: {
                                 color: '#aaa',
                                 fontSize: 12
@@ -870,11 +689,9 @@ $(function() {
     function zb6() {
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('zb6'));
-        var k = 19;
-        var a = 34;
-        var d = 7;
-        var v1 = d //死亡
-        var v2 = k + a //击杀和助攻
+        var v1 = 79;
+        var v2 = 24;
+        var v3 = v1 + v2; //击杀和助攻
         option = {
             tooltip: {
                 trigger: 'item',
@@ -890,11 +707,11 @@ $(function() {
                     }
                 },
                 data: [{
-                    value: v2,
-                    name: '击杀和助攻',
+                    value: v1,
+                    name: '俄罗斯',
                     label: {
                         normal: {
-                            formatter: v2 + '',
+                            formatter: '总损失',
                             textStyle: {
                                 fontSize: 20,
                                 color: '#fff',
@@ -902,13 +719,11 @@ $(function() {
                         }
                     }
                 }, {
-                    value: v1,
-                    name: '死亡',
+                    value: v2,
+                    name: '乌克兰',
                     label: {
                         normal: {
-                            formatter: function(params) {
-                                return 'KDA：' + Math.round((k + a) / d)
-                            },
+                            formatter: v3+'',
                             textStyle: {
                                 color: '#aaa',
                                 fontSize: 12

@@ -99,7 +99,7 @@ AppAsset::register($this);
                   $user=User::find()->where(['username'=>Yii::$app->user->identity->username])->one();
                   if($user->admin==1)
                   {
-                    echo '<a class="nav-link page-scroll" href="/project/jtj/yii2022/backend/web/index.php">Backend</a>';
+                    echo '<a class="nav-link page-scroll" href="/project/final/backend/web/index.php">Backend</a>';
                   }
                 }
                 ?>
